@@ -46,14 +46,6 @@ Just go to the support forum and ask away! I\'ll try to answer as soon as possib
 == Screenshots ==
 
 == Changelog ==
-= 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
-
-== Upgrade Notice ==
 
 = 1.0 =
 The first version of my plugin
