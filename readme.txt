@@ -45,6 +45,8 @@ Just go to the support forum and ask away! I\'ll try to answer as soon as possib
 
 == Screenshots ==
 
+1. preview
+
 == Changelog ==
 
 = 1.0 =
