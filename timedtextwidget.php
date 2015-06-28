@@ -5,7 +5,7 @@ Description: Display your textwidget on a set time.
 Author URI: http://newborndesign.be
 Author: Luigi van den Borne
 Author URI: http://newborndesign.be
-Version: 1.0.0
+Version: 1.1.0
 */
 
 /*  Copyright 2014  Luigi van den Borne  (email : luigi@newborndesign.be)
@@ -27,7 +27,7 @@ Version: 1.0.0
 defined('ABSPATH') or die();
 
 global $TimedTextWidget_version;
-$TimedTextWidget_version = "1.0.0";
+$TimedTextWidget_version = "1.1.0";
 
 class TimedTextWidget extends WP_Widget{
 
@@ -49,8 +49,8 @@ class TimedTextWidget extends WP_Widget{
 		extract($args, EXTR_SKIP);
 	
 		$title = isset( $instance['title'] ) ? $instance['title']: '';
-		$description = isset( $instance['description'] ) ? esc_attr( $instance['description'] ) : '';
-		$start_time = isset( $instance['start_time'] ) ? esc_attr( $instance['start_time'] ) : '';
+		$description = isset( $instance['description'] ) ? strip_tags($instance['description'],'<div><span><pre><p><br><hr><hgroup><h1><h2><h3><h4><h5><h6><ul><ol><li><dl><dt><dd><strong><em><b><i><u><img><a><abbr><address><blockquote><area><audio><video><form><fieldset><label><input><textarea><caption><table><tbody><td><tfoot><th><thead><tr><iframe>') : '';
+		$start_time = isset( $instance['start_time'] ) ? strip_tags( $instance['start_time'] ) : '';
 		$end_time = isset( $instance['end_time'] ) ? esc_attr( $instance['end_time'] ) : '';
 		$mon = is_string( $instance[ 'monday' ] ) ? esc_attr( $instance[ 'monday' ] ) : '1';
 		$tue = is_string( $instance[ 'tuesday' ] ) ? esc_attr( $instance[ 'tuesday' ] ) : '2';
@@ -70,14 +70,15 @@ class TimedTextWidget extends WP_Widget{
 		$day = date('N');
 
 		$time = date('H:i', time());
-		
+
+		if ( $start_time > $end_time ) { $dif = ('24:00' - $start_time); $tot_sum = ($end_time + $dif); }
 		// echo widget
 		if(in_array($day, $dayarray)){
-			if ( $time >= $start_time && $time < $end_time || $start_time == $end_time ) {
+			if ( $start_time < $end_time && $time >= $start_time && $time < $end_time || $start_time == $end_time || $start_time > $end_time && $tot_sum > $start_time && $tot_sum > $end_time  ) {
 				
 				echo $args['before_widget'];
 				if ( $title != '' ) { echo $before_title.$title.$after_title; }
-				echo '<p>'.$description.'</p>';
+				echo $description;
 				echo $args['after_widget'];
 			}
 		}

@@ -52,5 +52,10 @@ Just go to the support forum and ask away! I\'ll try to answer as soon as possib
 = 1.0 =
 The first version of my plugin
 
+= 1.1 =
+Bugfixes:
+- timedifference overlapping midnight fixed
+- description allowing html tags
+
 
 
