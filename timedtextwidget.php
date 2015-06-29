@@ -5,7 +5,7 @@ Description: Display your textwidget on a set time.
 Author URI: http://newborndesign.be
 Author: Luigi van den Borne
 Author URI: http://newborndesign.be
-Version: 1.1.0
+Version: 1.1.1
 */
 
 /*  Copyright 2014  Luigi van den Borne  (email : luigi@newborndesign.be)
@@ -27,7 +27,7 @@ Version: 1.1.0
 defined('ABSPATH') or die();
 
 global $TimedTextWidget_version;
-$TimedTextWidget_version = "1.1.0";
+$TimedTextWidget_version = "1.1.1";
 
 class TimedTextWidget extends WP_Widget{
 
