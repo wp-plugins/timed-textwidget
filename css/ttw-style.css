@@ -1,0 +1,25 @@
+.ttw-form {
+	display: block;
+	overflow: hidden;
+}
+
+
+.ttw-form [class^=col-] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	display: block;
+}
+
+.ttw-form .col-4 {
+	width: 33.33333333%;
+}
+
+.ttw-form .col-6 {
+width: 50%;
+}
