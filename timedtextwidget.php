@@ -50,7 +50,7 @@ class TimedTextWidget extends WP_Widget{
 	
 		$title = isset( $instance['title'] ) ? $instance['title']: '';
 		$description = isset( $instance['description'] ) ? strip_tags($instance['description'],'<div><span><pre><p><br><hr><hgroup><h1><h2><h3><h4><h5><h6><ul><ol><li><dl><dt><dd><strong><em><b><i><u><img><a><abbr><address><blockquote><area><audio><video><form><fieldset><label><input><textarea><caption><table><tbody><td><tfoot><th><thead><tr><iframe>') : '';
-		$start_time = isset( $instance['start_time'] ) ? strip_tags( $instance['start_time'] ) : '';
+		$start_time = isset( $instance['start_time'] ) ? esc_attr( $instance['start_time'] ) : '';
 		$end_time = isset( $instance['end_time'] ) ? esc_attr( $instance['end_time'] ) : '';
 		$mon = is_string( $instance[ 'monday' ] ) ? esc_attr( $instance[ 'monday' ] ) : '1';
 		$tue = is_string( $instance[ 'tuesday' ] ) ? esc_attr( $instance[ 'tuesday' ] ) : '2';

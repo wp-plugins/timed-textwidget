@@ -57,5 +57,9 @@ Bugfixes:
 - timedifference overlapping midnight fixed
 - description allowing html tags
 
+= 1.1 =
+Bugfixes:
+- type-error fixed
+
 
 
