@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Timed Textwidget\n"
+"POT-Creation-Date: 2014-08-31 03:56+0100\n"
+"PO-Revision-Date: 2014-08-31 03:58+0100\n"
+"Last-Translator: Luigi van den Borne <luigi@newborndesign.be>\n"
+"Language-Team: Luigi van den Borne <luigi@newborndesign.be>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: timedtextwidget.php:38
+msgid "Timed Text"
+msgstr "Getimede tekst"
+
+#: timedtextwidget.php:39
+msgid "Display your textwidget on a set time and/or day."
+msgstr "Toon je tekstwidget op een bepaalde tijd en / of dag."
+
+#: timedtextwidget.php:110 timedtextwidget.php:111
+msgid "00:00"
+msgstr "00:00"
+
+#: timedtextwidget.php:113
+msgid "1"
+msgstr "1"
+
+#: timedtextwidget.php:114
+msgid "2"
+msgstr "2"
+
+#: timedtextwidget.php:115
+msgid "3"
+msgstr "3"
+
+#: timedtextwidget.php:116
+msgid "4"
+msgstr "4"
+
+#: timedtextwidget.php:117
+msgid "5"
+msgstr "5"
+
+#: timedtextwidget.php:118
+msgid "6"
+msgstr "6"
+
+#: timedtextwidget.php:119
+msgid "7"
+msgstr "7"
+
+#: timedtextwidget.php:124
+msgid "Title:"
+msgstr "Titel:"
+
+#: timedtextwidget.php:133
+msgid "Start time:"
+msgstr "Start tijd:"
+
+#: timedtextwidget.php:138
+msgid "End time:"
+msgstr "Eind tijd:"
+
+#: timedtextwidget.php:144
+msgid "Monday"
+msgstr "Maandag"
+
+#: timedtextwidget.php:149
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+#: timedtextwidget.php:154
+msgid "Wednesday"
+msgstr "Woensdag"
+
+#: timedtextwidget.php:159
+msgid "Thursday"
+msgstr "Donderdag"
+
+#: timedtextwidget.php:164
+msgid "Friday"
+msgstr "Vrijdag"
+
+#: timedtextwidget.php:169
+msgid "Saturday"
+msgstr "Zaterdag"
+
+#: timedtextwidget.php:174
+msgid "Sunday"
+msgstr "Zondag"
