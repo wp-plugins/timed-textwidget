@@ -50,12 +50,15 @@ Just go to the support forum and ask away! I\'ll try to answer as soon as possib
 == Changelog ==
 
 = 1.0 =
-The first version of my plugin
+- the first version of my plugin
 
 = 1.1 =
 Bugfixes:
 - timedifference overlapping midnight fixed
 - description allowing html tags
 
+= 1.1.1 =
+Bugfixes:
+-type-error fixed
 
 
